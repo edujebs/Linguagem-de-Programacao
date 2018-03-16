@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main ()
+{
+    int a, b, c;
+    int x1, x2;
+    a = 0;
+    while (a == 0)
+    {
+        printf("\nDigite o valor para a : ");
+        scanf("%d",&a);
+        printf("\nDigite o valor para b : ");
+        scanf("%d",&b);
+        printf("\nDigite o valor para c : ");
+        scanf("%d",&c);
+        if (a==0)
+            printf("\n*** O valor de a nao pode ser zero ***");
+    }
+    x1 = (-b + sqrt((b*b) - (4*a*c))) / 2*a;
+    printf("\nx1 = %d\n", x1);
+    x2 = (-b - sqrt((b*b) - (4*a*c))) / 2*a;
+    printf("\nx2 = %d\n", x2);
+
+    return 0;
+}
